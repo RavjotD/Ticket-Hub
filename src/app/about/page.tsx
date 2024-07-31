@@ -4,7 +4,7 @@ export default function About() {
 		<div>
 
 		{/* Intro */}
-		<div className=" bg-gradient-to-br from-blue-800 to-blue-500 w-full p-8 border-b-2 flex flex-row"
+		<div className=" bg-gradient-to-br from-blue-800 to-blue-500 w-full p-8 border-b-4 flex flex-row"
 				style={{height:'350px'
 				}}>
 					<div className="flex-col float-start  mt-10 space-y-8 ">
@@ -13,7 +13,7 @@ export default function About() {
 					</div>
 		</div>
 		{/* Our Values */}
-		<div className="bg-gradient-to-bl from-blue-500 to-sky-700 w-full  p-8 border-b-2 flex-row "
+		<div className="bg-gradient-to-bl from-blue-500 to-sky-700 w-full  p-8 border-b-4 flex-row "
 				>
 					<div className="flex flex-col  mt-2 space-y-8 ">
 						<h2 className=" text-6xl font-bold text-white mt-2 text-center lg:text-end  mr-6 mb-4">Our Values</h2>
