@@ -1,43 +1,45 @@
+
+
 export default function About() {
 	return (
 		//Parent Div
 		<div>
 
 		{/* Intro */}
-		<div className=" bg-gradient-to-br from-blue-800 to-blue-500 w-full p-8 border-b-4 flex flex-row"
-				style={{height:'350px'
-				}}>
-					<div className="flex-col float-start  mt-10 space-y-8 ">
+		<div className=" bg-gradient-to-br from-blue-800 to-blue-500 w-full h-full p-8 border-b-4 flex flex-row"
+				>
+					<div className="flex-col float-start mb-2 mt-10 space-y-4 ">
 						<h2 className=" text-6xl font-bold text-white mt-2 ">Our Story</h2>
-						<p className="font-semibold p-4 text-start text-white justify-start">TicketHub's success is rooted in strong partnerships, constant innovation and industry leadership. We work with clients worldwide, to connect them with their fans, helping to make more live memories, everyday.</p>
+						<p className="font-semibold p-4  md:text-lg text-start text-white justify-start">TicketHub's success is rooted in strong partnerships, constant innovation, and industry leadership. We work with clients worldwide to connect them with their fans, helping to make more live memories every day.</p>
+						<p className="font-semibold p-4 md:text-lg text-start text-white justify-start">Our platform is designed to streamline the ticket purchasing process, ensuring a seamless and user-friendly experience for both event organizers and attendees. With our advanced technology, we provide secure and efficient ticket sales, dynamic pricing options, and comprehensive event management tools. Our goal is to empower event creators to reach wider audiences, maximize their revenue potential, and deliver unforgettable experiences.
+						At TicketHub, we believe in the power of live events to bring people together, create lasting memories, and foster a sense of community. Whether it’s a major concert, a local theater production, or a sporting event, our mission is to make it easy for fans to access the events they love, while providing organizers with the tools they need to manage their events successfully. By leveraging data analytics, personalized marketing strategies, and our extensive network, we help ensure that every event is a success from start to finish.</p>					</div>
 					</div>
-		</div>
 		{/* Our Values */}
 		<div className="bg-gradient-to-bl from-blue-500 to-sky-700 w-full  p-8 border-b-4 flex-row "
 				>
 					<div className="flex flex-col  mt-2 space-y-8 ">
 						<h2 className=" text-6xl font-bold text-white mt-2 text-center lg:text-end  mr-6 mb-4">Our Values</h2>
 
-						<div className="  flex flex-col lg:flex lg:flex-row w-full  h-full gap-6 p-6  ">
+						<div className="  flex flex-col lg:flex lg:flex-row w-full h-full gap-6 p-6  ">
 
-							<div className=" flex flex-col text-white h-full border-2 rounded  w-full  p-3 text-center bg-blue-800 transition-transform hover:-translate-y-5">
+							<div className=" flex flex-col text-white h-full border-2 w-full rounded-full px-8 py-10 text-center bg-blue-800 transition-transform hover:-translate-y-5">
 								<h1 className=" font-bold mb-3 text-xl">Innovation</h1>
-								<p className="font-sm text-md">Encouraging creativity and the development of new ideas to drive progress and improvement.</p>
+								<p className=" px-10 font-sm text-md">Encouraging creativity and the development of new ideas to drive progress and improvement.</p>
 								</div>
 
-							<div className=" flex flex-col text-white h-full border-2 rounded  w-full  p-3 text-center bg-blue-800 transition-transform hover:-translate-y-7">
+								<div className=" flex flex-col text-white h-full border-2 w-full rounded-full px-8 py-10 text-center bg-blue-800 transition-transform hover:-translate-y-5">
 								<h1 className=" font-bold mb-3 text-xl">Integrity</h1>
-								<p className="font-sm text-md">Acting with honesty and maintaining strong moral principles within organization.</p>
+								<p className=" px-10 font-sm text-md">Encouraging creativity and the development of new ideas to drive progress and improvement.</p>
 								</div>
 
-							<div className=" flex flex-col text-white h-full border-2 rounded  w-full  p-3 text-center bg-blue-800 transition-transform hover:-translate-y-7">
+								<div className=" flex flex-col text-white h-full border-2 w-full rounded-full px-8 py-10 text-center bg-blue-800 transition-transform hover:-translate-y-5">
 								<h1 className=" font-bold mb-3 text-xl">Customer-Centric</h1>
-								<p className="font-sm text-md">Putting the needs and satisfaction of customers at the forefront of decision-making.</p>
+								<p className=" px-10 font-sm text-md">Encouraging creativity and the development of new ideas to drive progress and improvement.</p>
 								</div>	
 
-							<div className=" flex flex-col text-white h-full border-2 rounded  w-full  p-3 text-center bg-blue-800 transition-transform hover:-translate-y-7">
+								<div className=" flex flex-col text-white h-full border-2 w-full rounded-full px-8 py-10 text-center bg-blue-800 transition-transform hover:-translate-y-5">
 								<h1 className=" font-bold mb-3 text-xl">Transparency</h1>
-								<p className="font-sm text-md">Ensuring open and honest communication to organizational stakeholders.</p>
+								<p className=" px-10 font-sm text-md">Encouraging creativity and the development of new ideas to drive progress and improvement.</p>
 								</div>	
 
 						</div>
