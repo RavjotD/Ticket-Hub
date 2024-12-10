@@ -91,7 +91,7 @@ const EventsPage: React.FC = () => {
 					{currentEvents.map((event: any) => (
 						<div
 							key={event.id}
-							className="bg-cyan-400  border-4 border-white shadow-lg rounded-lg overflow-hidden w-full md:w-2/3 lg:w-1/4 flex flex-col">
+							className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-200 hover:scale-[1.02] border border-gray-400 w-full md:w-2/3 lg:w-1/4 flex flex-col">
 							<img
 								src={event.images[0].url}
 								alt={event.name}
@@ -106,16 +106,14 @@ const EventsPage: React.FC = () => {
 										{event.dates.start.localDate}
 									</p>
 								</div>
-								<a
-									href={event.url}
-									target="_blank"
-									rel="noopener noreferrer">
-									<button
-										type="button"
-										className="rounded border-2 border-blue-500 px-4 py-2 text-blue-500 font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-blue-500 hover:text-white">
-										Buy Tickets
-									</button>
-								</a>
+								<div className="p-4">
+									
+                  					<a
+										href={`/events/${event.id}`}
+										className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-200">
+										View Details
+									</a>
+								</div>
 							</div>
 						</div>
 					))}

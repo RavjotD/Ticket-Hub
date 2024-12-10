@@ -1,97 +1,125 @@
-
-
 export default function About() {
 	return (
-		//Parent Div
-		<div>
-
-		{/* Intro */}
-		<div className=" bg-gradient-to-br from-blue-800 to-blue-500 w-full h-full p-8 border-b-4 flex flex-row"
-				>
-					<div className="flex-col float-start mb-2 mt-10 space-y-4 ">
-						<h2 className=" text-6xl font-bold text-white mt-2 ">Our Story</h2>
-						<p className="font-semibold p-4  md:text-lg text-start text-white justify-start">TicketHub's success is rooted in strong partnerships, constant innovation, and industry leadership. We work with clients worldwide to connect them with their fans, helping to make more live memories every day.</p>
-						<p className="font-semibold p-4 md:text-lg text-start text-white justify-start">Our platform is designed to streamline the ticket purchasing process, ensuring a seamless and user-friendly experience for both event organizers and attendees. With our advanced technology, we provide secure and efficient ticket sales, dynamic pricing options, and comprehensive event management tools. Our goal is to empower event creators to reach wider audiences, maximize their revenue potential, and deliver unforgettable experiences.
-						At TicketHub, we believe in the power of live events to bring people together, create lasting memories, and foster a sense of community. Whether it’s a major concert, a local theater production, or a sporting event, our mission is to make it easy for fans to access the events they love, while providing organizers with the tools they need to manage their events successfully. By leveraging data analytics, personalized marketing strategies, and our extensive network, we help ensure that every event is a success from start to finish.</p>					</div>
+		<div className="w-full">
+			{/* Hero Section - Our Story */}
+			<div className="w-full bg-gradient-to-br from-blue-900 to-blue-800 py-20">
+				<div className="container mx-auto px-4">
+					<div className="max-w-4xl">
+						<h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+							Our Story
+						</h1>
+						<div className="space-y-6 text-lg text-gray-100">
+							<p>
+								TicketHub's success is rooted in strong partnerships, constant innovation, and industry leadership. 
+								We work with clients worldwide to connect them with their fans, helping to make more live memories every day.
+							</p>
+							<p>
+								Our platform is designed to streamline the ticket purchasing process, ensuring a seamless and user-friendly experience 
+								for both event organizers and attendees. With our advanced technology, we provide secure and efficient ticket sales, 
+								dynamic pricing options, and comprehensive event management tools.
+							</p>
+						</div>
 					</div>
-		{/* Our Values */}
-		<div className="bg-gradient-to-bl from-blue-500 to-sky-700 w-full  p-8 border-b-4 flex-row "
-				>
-					<div className="flex flex-col  mt-2 space-y-8 ">
-						<h2 className=" text-6xl font-bold text-white mt-2 text-center lg:text-end  mr-6 mb-4">Our Values</h2>
-
-						<div className="  flex flex-col lg:flex lg:flex-row w-full h-full gap-6 p-6  ">
-
-							<div className=" flex flex-col text-white h-full border-2 w-full rounded-full px-8 py-10 text-center bg-blue-800 transition-transform hover:-translate-y-5">
-								<h1 className=" font-bold mb-3 text-xl">Innovation</h1>
-								<p className=" px-10 font-sm text-md">Encouraging creativity and the development of new ideas to drive progress and improvement.</p>
-								</div>
-
-								<div className=" flex flex-col text-white h-full border-2 w-full rounded-full px-8 py-10 text-center bg-blue-800 transition-transform hover:-translate-y-5">
-								<h1 className=" font-bold mb-3 text-xl">Integrity</h1>
-								<p className=" px-10 font-sm text-md">Encouraging creativity and the development of new ideas to drive progress and improvement.</p>
-								</div>
-
-								<div className=" flex flex-col text-white h-full border-2 w-full rounded-full px-8 py-10 text-center bg-blue-800 transition-transform hover:-translate-y-5">
-								<h1 className=" font-bold mb-3 text-xl">Customer-Centric</h1>
-								<p className=" px-10 font-sm text-md">Encouraging creativity and the development of new ideas to drive progress and improvement.</p>
-								</div>	
-
-								<div className=" flex flex-col text-white h-full border-2 w-full rounded-full px-8 py-10 text-center bg-blue-800 transition-transform hover:-translate-y-5">
-								<h1 className=" font-bold mb-3 text-xl">Transparency</h1>
-								<p className=" px-10 font-sm text-md">Encouraging creativity and the development of new ideas to drive progress and improvement.</p>
-								</div>	
-
-						</div>
-						
-					</div>
-		</div>
-	{/* Why TicketHub */}
-		<div className="bg-gradient-to-br from-sky-700 to-blue-700 w-full  border-b-2 p-8 flex flex-row mb-4"
-				>
-					<div className="flex flex-col float-start  mt-6 space-y-8  w-full h-full">
-						<h2 className=" text-6xl font-bold text-white mt-2 ">Why TicketHub?</h2>
-						<p className="font-semibold p-4 text-start text-white justify-start ">Choose TicketHub as your ticketing partner to ensure secure and seamless ticketing experiences through our globally recognized platform and advanced technology. With TicketHub's extensive marketing tools and detailed analytics, we can optimize sales and enhance the visibility of our events, providing the best possible service to our audience.</p>
-					</div>
-		</div>
-		
-			{/* FAQ Accordion */}
-			<div className="flex justify-center items-center mt-3 p-3">
-			<h1 className="text-4xl text-white font-bold font-sans">FAQs</h1>
-			</div>
-			<div className=" p-11 flex  justify-center">
-		
-				<div className="bg-blue-700 text-white rounded-t-lg rounded-b-2xl w-full lg:w-3/4 p-2">
-
-						<div className="collapse collapse-arrow border-b-2 border-white">
-  							<input type="radio" name="my-accordion-2" defaultChecked />
-  								<div className="collapse-title text-2xl font-medium">What is TicketHub?</div>
-  									<div className="collapse-content ">
-    									<p className="text-md font-serif"> - TicketHub is your local events guider that showcases all of the events your looking for.</p>
-  									</div>
-						</div>
-						
-						<div className="collapse collapse-arrow border-b-2 border-white">
-  							<input type="radio" name="my-accordion-2" />
-  								<div className="collapse-title text-2xl font-medium">How do I buy ticket's on TicketHub?</div>
-  									<div className="collapse-content">
-   							 			<p className="text-md font-serif">- You can only purchase tickets by signing up. After logging in, search for an event you want to attend and follow the checkout process buy selecting "Buy Ticket".</p>
-  									</div>
-						</div>
-						<div className="collapse collapse-arrow border-b-2 border-white">
-  							<input type="radio" name="my-accordion-2" />
-  								<div className="collapse-title text-2xl font-medium">What payment method's are accepted?</div>
-  									<div className="collapse-content">
-   							 			<p className=" text-md font-serif">- TicketHub accepts all major credit cards and debit cards. As well as digital payment methods such as PayPal. Specific payment options may vary by region.</p>
-  									</div>
-						</div>
 				</div>
 			</div>
 
+			{/* Our Values Section */}
+			<div className="w-full bg-blue-800 py-20">
+				<div className="container mx-auto px-4">
+					<h2 className="text-5xl md:text-7xl font-bold text-white mb-16 leading-tight">
+						Our Values
+					</h2>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+						{[
+							{
+								title: "Innovation",
+								description: "Pushing boundaries with cutting-edge solutions and creative approaches to revolutionize the ticketing industry."
+							},
+							{
+								title: "Integrity",
+								description: "Maintaining the highest standards of honesty, transparency, and ethical business practices in all our operations."
+							},
+							{
+								title: "Customer-Centric",
+								description: "Putting our users first, ensuring every decision enhances their experience and satisfaction."
+							},
+							{
+								title: "Transparency",
+								description: "Building trust through clear communication and open business practices with all stakeholders."
+							}
+						].map((value, index) => (
+							<div 
+								key={index}
+								className="bg-blue-700/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl"
+							>
+								<h3 className="text-2xl font-bold text-white mb-4">{value.title}</h3>
+								<p className="text-gray-100">{value.description}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
 
+			{/* Why TicketHub Section */}
+			<div className="w-full bg-gradient-to-br from-blue-800 to-blue-900 py-20">
+				<div className="container mx-auto px-4">
+					<div className="max-w-4xl">
+						<h2 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+							Why TicketHub?
+						</h2>
+						<div className="bg-blue-700/30 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
+							<p className="text-xl text-gray-100">
+								Choose TicketHub as your ticketing partner to ensure secure and seamless ticketing experiences through our 
+								globally recognized platform and advanced technology. With TicketHub's extensive marketing tools and detailed 
+								analytics, we can optimize sales and enhance the visibility of our events, providing the best possible service 
+								to our audience.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			{/* FAQ Section */}
+			<div className="w-full bg-blue-800 py-20">
+				<div className="container mx-auto px-4">
+					<h2 className="text-5xl md:text-7xl font-bold text-white mb-16 text-center">
+						Frequently Asked Questions
+					</h2>
+					<div className="max-w-3xl mx-auto space-y-6">
+						<div className="bg-blue-700/50 rounded-2xl overflow-hidden backdrop-blur-sm">
+							<details className="group">
+								<summary className="flex justify-between items-center p-6 cursor-pointer text-white">
+									<h3 className="text-xl font-semibold">What is TicketHub?</h3>
+									<span className="transform group-open:rotate-180 transition-transform duration-200">
+										<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+										</svg>
+									</span>
+								</summary>
+								<div className="px-6 pb-6 text-gray-100">
+									<p>TicketHub is a leading global platform for live event ticketing, connecting millions of fans with their favorite events.</p>
+								</div>
+							</details>
+						</div>
 
-</div>
-
+						<div className="bg-blue-700/50 rounded-2xl overflow-hidden backdrop-blur-sm">
+							<details className="group">
+								<summary className="flex justify-between items-center p-6 cursor-pointer text-white">
+									<h3 className="text-xl font-semibold">What payment methods are accepted?</h3>
+									<span className="transform group-open:rotate-180 transition-transform duration-200">
+										<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+										</svg>
+									</span>
+								</summary>
+								<div className="px-6 pb-6 text-gray-100">
+									<p>TicketHub accepts all major credit cards and debit cards, as well as digital payment methods such as PayPal. Specific payment options may vary by region.</p>
+								</div>
+							</details>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	)
 }
